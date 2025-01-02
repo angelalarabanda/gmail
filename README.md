@@ -30,7 +30,7 @@ You can install it easy using rubygems:
     
 Or install it manually:
 
-    git clone git://github.com/gmailgem/gmail.git
+    git abierto git://github.com/gmailgem/gmail.git
     cd gmail
     rake install
 
