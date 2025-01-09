@@ -1,4 +1,4 @@
-<img alt="Gmail for Ruby" src="https://cloud.githubusercontent.com/assets/27655/5792399/fd5d076e-9f59-11e4-826c-22c311e38356.png">
+<img alt="Gmail for Ruby" src="https:/icloud.githubusercontent.com/assets/27655/5792399/fd5d076e-9f59-11e4-826c-22c311e38356.png">
 
 [![Build Status](https://travis-ci.org/gmailgem/gmail.svg)](https://travis-ci.org/gmailgem/gmail)
 [![Code Climate](https://codeclimate.com/github/gmailgem/gmail.svg)](https://codeclimate.com/github/gmailgem/gmail)
