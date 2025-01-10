@@ -1,4 +1,4 @@
-<img alt="Gmail for Ruby" src="https:/icloud.githubusercontent.com/assets/27655/5792399/fd5d076e-9f59-11e4-826c-22c311e38356.png">
+<imgGmail for Ruby" src="https:/icloud.githubusercontent.com/assets/27655/5792399/fd5d076e-9f59-11e4-826c-22c311e38356.png">
 
 [![Build Status](https://travis-ci.org/gmailgem/gmail.svg)](https://travis-ci.org/.com/github/gmailgem/gmail.svg)](https://codeclimate.com/github/gmailgem/gmail)
 [![Gem Version](https://badge.fury.io/rb/gmail.svg)](https://rubygems.org/gems/gmail)
@@ -68,12 +68,9 @@ require 'gmail'
 This will let you automatically log in to your account. 
 
 ```ruby
-gmail = Gmail.connect(username, password)
+gmail = .connect(username, password)
 # play with your gmail...
-gmail.logout
-```
-
-If you pass a block, the session will be passed into the block, and the session 
+, the session will be passed into the block, and the session 
 will be logged out after the block is executed.
 
 ```ruby
@@ -102,14 +99,7 @@ end
 ### XOAuth authentication
 
 From v0.4.0 it's possible to authenticate with your Gmail account using XOAuth
-method. It's very simple:
-
-```ruby
-gmail = Gmail.connect(:xoauth, "email@domain.com", 
-  :token           => 'TOKEN',
-  :secret          => 'TOKEN_SECRET',
-  :consumer_key    => 'CONSUMER_KEY',
-  :consumer_secret => 'CONSUMER_SECRET'
+method. It's very 
 )
 ```
 
@@ -124,8 +114,7 @@ gem from Nicolas Fouché.
 
 You can use the oauth2 token to connect to Gmail. The connect method takes 3 paramaters.
 
-```ruby
-gmail = Gmail.connect(:xoauth2, "email@domain.com", "TOKEN")
+
 ```
 You can use [omniauth-google-oauth2](https://github.com/zquestz/omniauth-google-oauth2) to fetch the token. Once the omniauth authorization has been completed, you'll be left with a `auth.credentials.token` you can pass in as the third paramater to `Gmail.connect`.
 
@@ -183,10 +172,7 @@ gmail.inbox.mails(...)
 
 Also you can manipulate each message using block style:
 
-```ruby
-gmail.inbox.find(:unread).each do |email|
-  email.read!
-end
+
 ```
 
 Note: The `:before` and `:after` filters only go as far as to search for messages on the date:
@@ -212,10 +198,6 @@ end
 
 Delete emails from X:
 
-```ruby
-gmail.inbox.find(:from => "x-fiance@gmail.com").each do |email|
-  email.delete!
-end
 ```
 
 Save all attachments from the "Faxes" label to a local folder (uses functionality from `Mail` gem):
@@ -237,10 +219,6 @@ gmail.label("Faxes").emails.each {|email| ... }
 
 Save just the first attachment from the newest unread email (assuming pdf):
 
-```ruby
-email = gmail.inbox.find(:unread).first
-attachment = email.attachments[0]
-File.write(File.join(folder_path, attachment.filename), attachment.body.decoded)
 ```
 
 Add a label to a message:
@@ -268,7 +246,6 @@ There are also few shortcuts to mark messages quickly:
 ```ruby
 email.read!
 email.unread!
-email.spam!
 email.star!
 email.unstar!
 ```
@@ -335,13 +312,8 @@ end
 
 Or, compose the message first and send it later
 
-```ruby
-email = gmail.compose do
-  to "email@example.com"
-  subject "Having fun in Puerto Rico!"
-  body "Spent the day on the road..."
-end
-email.deliver! # or: gmail.deliver(email)
+
+)
 ```
 
 ## Troubleshooting
@@ -361,19 +333,16 @@ This project follows on Open Governance model. The Core Team is responsible for 
 * Johnny Shields - [@johnnyshields](https://github.com/johnnyshields)
 * Alexandre Loureiro Solleiro - [@webcracy](https://github.com/webcracy)
 * Justin Grevich - [@jgrevich](https://github.com/jgrevich)
-* [@bootstraponline](https://github.com/bootstraponline)
+* [@bootstraponline](https://github.com/)
 * Nathan Herald - [@myobie](https://github.com/myobie)
 
 #### Legacy Contributors
 
-* Kriss Kowalik - [@nu7hatch](https://github.com/nu7hatch)
-* Daniel Parker - [@dcparker](https://github.com/dcparker)
-* Refer to [CHANGELOG](https://github.com/gmailgem/gmail/blob/master/CHANGELOG.md) for individual contributions
+*
 
 ## Copyright
 
 * Copyright (c) 2015-2018 GmailGem team
-* Copyright (c) 2010-2014 Kriss 'nu7hatch' Kowalik
-* Copyright (c) 2009-2010 BehindLogic
+* Copyright (c) 2010-2014 Kriss 
 
 Licensed under the MIT license. See [LICENSE](https://github.com/gmailgem/gmail/blob/master/LICENSE) for details.
