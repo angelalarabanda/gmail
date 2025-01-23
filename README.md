@@ -353,4 +353,4 @@ This project follows on Open Governance model. The Core Team is responsible for 
 * Copyright (c) 2010-2014 Kriss 'nu7hatch' Kowalik
 * Copyright (c) 2009-2010 BehindLogic
 
-Licensed under the MIT license. See [LICENSE](https://github.com/gmailgem/gmail/blob/master/LICENSE) for details.
+Licensed under the MIT license. See [LICENSE](https://github.com/gmailgem/gmail/blob/master/LICENSE) for details.entrar 
